@@ -1,3 +1,33 @@
 <div class="signupMain">
-    
+    <h2>Registration Form</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="my-2">
+            <label for="firstName"  class="form-label">First Name</label>
+            <input class="form-control" type="text" id="firstName" formControlName="firstName">
+        </div>
+        <div class="mb-2">
+            <label for="lastName"  class="form-label">Last Name</label>
+            <input class="form-control" type="text" id="lastName" formControlName="lastName">
+        </div>
+        <div class="mb-2">
+            <label for="email"  class="form-label">Email</label>
+            <input class="form-control" type="email" id="email" formControlName="email">
+        </div>
+        <div class="mb-2">
+            <p>Gender</p>
+            <input type="radio"  id="male" value="male" class="form-check-input" formControlName="gender">
+            <label class="form-check-label px-2" for="male">Male</label>
+            <input type="radio" id="female" value="female" class="form-check-input" formControlName="gender">
+            <label class="form-check-label px-2" for="female">Female</label>
+            <input type="radio" id="other" value="other" class="form-check-input" formControlName="gender">
+            <label class="form-check-label px-2" for="other">Other</label>
+        </div>
+        <div class="mb-2">
+            <label for="password"  class="form-label">Create Password</label>
+            <input class="form-control" type="password" id="password" formControlName="password">
+        </div>
+        <div>
+            <input type="submit" class="btn btn-success">
+        </div>
+    </form>
 </div> 
