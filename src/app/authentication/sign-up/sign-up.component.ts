@@ -19,16 +19,16 @@ signupForm: FormGroup;
   ngOnInit() 
   {
       this.signupForm = new FormGroup({
-        username : new FormControl(null),
-        // description : new FormControl(null),
-        // email : new FormControl(null),
-        // gender : new FormControl(null),
-        password : new FormControl(null)
+        firstName : new FormControl(null),
+        lastName : new FormControl(null),
+        email : new FormControl(null),
+        password : new FormControl(null),        
+        gender : new FormControl(null),
       })
   }
   onSubmit()
   {
-    this.service.RegisterUser(this.signupForm.value).subscribe
+    this.service.registerUser(this.signupForm.value).subscribe
     (
       result =>
       {
@@ -36,6 +36,8 @@ signupForm: FormGroup;
       }
     )
     console.log(this.signupForm.value);
+    alert("You have been successfully registered!" );
+    this.router.navigate(['/login'])
     this.signupForm.reset();
   }
 }

@@ -7,18 +7,22 @@ import { SignUpComponent } from './authentication/sign-up/sign-up.component';
 import { LogInComponent } from './authentication/log-in/log-in.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './UI/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    LogInComponent
+    LogInComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
