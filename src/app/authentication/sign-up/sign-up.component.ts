@@ -28,6 +28,13 @@ signupForm: FormGroup;
   }
   onSubmit()
   {
+    const body = {
+      firstName: this.signupForm.get('firstName').value,
+      lastName: this.signupForm.get('lastName').value,
+      email: this.signupForm.get('email').value,
+      gender: this.signupForm.get('gender').value,
+      password: this.signupForm.get('password').value
+    };
     this.service.registerUser(this.signupForm.value).subscribe
     (
       result =>
