@@ -26,7 +26,7 @@ export class LogInComponent implements OnInit {
     };
     this.service.loginUser(body).subscribe
       (res => {
-
+        console.log(body);        
       }
       )
     this.router.navigate(['/home'])
