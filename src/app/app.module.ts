@@ -16,6 +16,9 @@ import { MenComponent } from './components/men/men.component';
 import { WomenComponent } from './components/women/women.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatStepperModule} from '@angular/material/stepper';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { ContactComponent } from './components/contact/contact.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

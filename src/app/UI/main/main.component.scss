@@ -1,6 +1,30 @@
 .mainBackground{
-    background-image: url('../../../assets/images/main-image.jpg');
+    //background-image: url('../../../assets/images/main-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     min-height: 700px;
 }
+/* CSS for the arrow buttons and navigation */
+.stepper-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .arrow-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .arrow-icon {
+    color: #007bff; /* Change the color as needed */
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
