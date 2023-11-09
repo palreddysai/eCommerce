@@ -1,6 +1,8 @@
 <div class="container-fluid">
     <div class="mainBackground">
-            <img [src]="slides[currentIndex].image" alt="{{ slides[currentIndex].description }}" class="carousel-image">
+        <div class="carouselMain">
+            <img [src]="slides[currentIndex].image" alt="{{ slides[currentIndex].description }}" class="img-fluid">
+        </div>    
             <div class="carousel-nav">
                 <!-- <button mat-icon-button (click)="previous()">
                     <mat-icon class="arrow-icon">keyboard_arrow_left</mat-icon>

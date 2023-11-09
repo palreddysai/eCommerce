@@ -10,7 +10,8 @@ export class MainComponent implements OnInit{
   slides = [
     { image: "../../../assets/images/female-friends-out-shopping-together.jpg", description: 'Slider image 1' },
     { image: "../../../assets/images/seasonal-sale-discounts-presents-purchase-visiting-boutiques-luxury.jpg", description: 'Slider image 2' },
-    { image: "../../../assets/images/woman-holds-fashion-shopping-bag.jpg", description: 'Slider image 3' }
+    { image: "../../../assets/images/corousal-1.jpg", description: 'Slider image 3' },
+    { image: "../../../assets/images/corousal-2.jpg", description: 'Slider image 4' }
   ]
   currentIndex = 0;
   private slideInterval: any;
