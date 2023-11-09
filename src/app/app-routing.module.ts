@@ -11,8 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = 
 [
-  {path:'login', component:LogInComponent},
-  {path:'sign-up', component:SignUpComponent},
+  
   
   {path:'main', component:MainComponent,children:[
     {path:'home', component:HomeComponent},
@@ -20,6 +19,8 @@ const routes: Routes =
     {path:'women', component:WomenComponent},
     {path:'about', component:AboutComponent},
     {path:'contact', component:ContactComponent},
+    {path:'login', component:LogInComponent},
+    {path:'login/sign-up', component:SignUpComponent},
     // {path: '', redirectTo: 'main/home', pathMatch: 'full'}
   ]},
   {path: '', redirectTo: '/main/home', pathMatch: 'full'}
