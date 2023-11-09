@@ -13,13 +13,16 @@ const routes: Routes =
 [
   {path:'login', component:LogInComponent},
   {path:'sign-up', component:SignUpComponent},
-  {path:'home', component:HomeComponent},
-  {path:'main', component:MainComponent},
-  {path:'men', component:MenComponent},
-  {path:'women', component:WomenComponent},
-  {path:'about', component:AboutComponent},
-  {path:'contact', component:ContactComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  
+  {path:'main', component:MainComponent,children:[
+    {path:'home', component:HomeComponent},
+    {path:'men', component:MenComponent},
+    {path:'women', component:WomenComponent},
+    {path:'about', component:AboutComponent},
+    {path:'contact', component:ContactComponent},
+    // {path: '', redirectTo: 'main/home', pathMatch: 'full'}
+  ]},
+  {path: '', redirectTo: '/main/home', pathMatch: 'full'}
 ];
 
 @NgModule({
