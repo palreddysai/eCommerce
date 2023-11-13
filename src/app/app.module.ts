@@ -19,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
     BrowserAnimationsModule,
     MatStepperModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
