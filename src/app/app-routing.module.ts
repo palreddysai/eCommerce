@@ -20,8 +20,7 @@ const routes: Routes =
     {path:'about', component:AboutComponent},
     {path:'contact', component:ContactComponent},
     {path:'login', component:LogInComponent},
-    {path:'login/sign-up', component:SignUpComponent},
-    // {path: '', redirectTo: 'main/home', pathMatch: 'full'}
+    {path:'login/sign-up', component:SignUpComponent}
   ]},
   {path: '', redirectTo: '/main/home', pathMatch: 'full'}
 ];

@@ -17,9 +17,7 @@ import { WomenComponent } from './components/women/women.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatStepperModule} from '@angular/material/stepper';
-import { MatIconModule } from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
+import { MaterialModule } from './common/material/material.module';
 
 @NgModule({
   declarations: [
@@ -42,9 +40,7 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     RouterModule,
     BrowserAnimationsModule,
-    MatStepperModule,
-    MatIconModule,
-    MatCardModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,15 +2,28 @@
     <div class="mainBackground">
         <div class="carouselMain">
             <img [src]="slides[currentIndex].image" alt="{{ slides[currentIndex].description }}" class="img-fluid">
-        </div>    
-            <div class="carousel-nav">
-                <!-- <button mat-icon-button (click)="previous()">
-                    <mat-icon class="arrow-icon">keyboard_arrow_left</mat-icon>
-                </button>
-                <button mat-icon-button (click)="next()">
-                    <mat-icon class="arrow-icon">keyboard_arrow_right</mat-icon>
-                </button> -->
-            </div>
-            <router-outlet></router-outlet>
+        </div>   
+        <div class="menContainer">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>Shiba Inu</mat-card-title>
+                  <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+              
+        </div>
     </div>
 </div>
